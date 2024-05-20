@@ -1,50 +1,120 @@
 <!DOCTYPE html>
 <html>
    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Chase Atlantic</title>
+    <title>Photo</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
-   <body>
-     <h1 align = "center" style="font-size: 35px; text-decoration: none;">Фотографії</h1><br><br>
-      <table align = "center">
-         <tr>
-            <td>
-                  <img src="Chase Atlantic/IMG_4706.JPG" alt="Фото 1" width="300" height="450">
-            </td>
-            <td>
-                  <img src="Chase Atlantic/IMG_4708.JPG" alt="Фото 2" width="300" height="400">
-            </td>
-            <td>
-                  <img src="Chase Atlantic/IMG_4707.JPG" alt="Фото 3" width="300" height="450">
-            </td>
-         </tr>
-         <tr>
-            <td>
-                  <img src="Chase Atlantic/IMG_4708.JPG" alt="Фото 4" width="300" height="400">
-            </td>
-            <td>
-                  <img src="Chase Atlantic/IMG_4709.JPG" alt="Фото 5" width="300" height="400">
-            </td>
-            <td>
-                  <img src="Chase Atlantic/IMG_4715.JPG" alt="Фото 6" width="300" height="450">
-            </td>
-         </tr>
-         <tr>
-            <td>
-                    <img src="Chase Atlantic/IMG_4713.JPG" alt="Фото 10" width="300" height="450">
-            </td>
-            <td>
-                  <img src="Chase Atlantic/IMG_4711.JPG" alt="Фото 8" width="300" height="450">
-            </td>
-            <td>
-                  <img src="Chase Atlantic/IMG_4712.JPG" alt="Фото 9" width="300" height="450">
-            </td>
-          </tr>
-      </table>
-      <br><br><br><br>
-      <a href="index.html" title="Повернутися до головного меню">
-            <img src="Chase Atlantic/button1.jpg" align = "center"width="300pt" alt="Повернутися до головного меню">
-       </a>
+   <body align="center">
+               <!--header-->
+               <header>
+                  <div class="all_header_menu">
+                      <div class="logo">
+                           <h1>Chase Atlantic</h1>
+                      </div>
+                         <div class="textbox">
+                            <ul>
+                              <li><a href="home.html">Home</a></li>
+                              <li><a href="merch.html">Merch</a></li>
+                              <li><a href="albums.html">Albums</a></li>
+                              <li><a href="photo.html">Photo</a></li>
+                            </ul>
+                          </div>
+                  </div>
+              </header>
+          <!--banner-->
+     <div class="banner"></div>
+      <div id = "infoBlock">
+            <div class="block_gallery">
+                  <div class="container">
+                    <input type="radio" name="images" id="i1">
+                    <input type="radio" name="images" id="i2">
+                    <input type="radio" name="images" id="i3">
+                    <input type="radio" name="images" id="i4">
+                    <input type="radio" name="images" id="i5">
+                    <input type="radio" name="images" id="i6">
+                    <input type="radio" name="images" id="i7">
+                    <input type="radio" name="images" id="i8">
+                    <input type="radio" name="images" id="i9">
+
+                     <div class="slide_img" id="one">
+                         <img src="ChaseAtlantic/photo10.jpg">
+
+                         <label for="i9" class="pre"></label>
+                         <label for="i2" class="nxt"></label>
+                     </div>
+                     <div class="slide_img" id="two">
+                        <img src="ChaseAtlantic/photo2.JPG">
+
+                        <label for="i1" class="pre"></label>
+                        <label for="i3" class="nxt"></label>
+                    </div>
+                    <div class="slide_img" id="three">
+                        <img src="ChaseAtlantic/photo3.JPG">
+
+                        <label for="i2" class="pre"></label>
+                        <label for="i4" class="nxt"></label>
+                    </div>
+                    <div class="slide_img" id="four">
+                        <img src="ChaseAtlantic/photo4.JPG">
+
+                        <label for="i3" class="pre"></label>
+                        <label for="i5" class="nxt"></label>
+                    </div>
+                    <div class="slide_img" id="five">
+                        <img src="ChaseAtlantic/photo13.jpg">
+
+                        <label for="i4" class="pre"></label>
+                        <label for="i6" class="nxt"></label>
+                    </div>
+                    <div class="slide_img" id="six">
+                        <img src="ChaseAtlantic/photo14.jpg">
+
+                        <label for="i5" class="pre"></label>
+                        <label for="i7" class="nxt"></label>
+                    </div>
+                    <div class="slide_img" id="seven">
+                        <img src="ChaseAtlantic/photo15.jpg">
+
+                        <label for="i6" class="pre"></label>
+                        <label for="i8" class="nxt"></label>
+                    </div>
+                    <div class="slide_img" id="eight">
+                        <img src="ChaseAtlantic/photo16.jpg">
+
+                        <label for="i7" class="pre"></label>
+                        <label for="i9" class="nxt"></label>
+                    </div>
+                    <div class="slide_img" id="nine">
+                        <img src="ChaseAtlantic/photo9.jpg">
+
+                        <label for="i8" class="pre"></label>
+                        <label for="i1" class="nxt"></label>
+                    </div>
+                    <div class="nav">
+                        <label class="dots" id="dot1" for="i1"></label>
+                        <label class="dots" id="dot2" for="i2"></label>
+                        <label class="dots" id="dot3" for="i3"></label>
+                        <label class="dots" id="dot4" for="i4"></label>
+                        <label class="dots" id="dot5" for="i5"></label>
+                        <label class="dots" id="dot6" for="i6"></label>
+                        <label class="dots" id="dot7" for="i7"></label>
+                        <label class="dots" id="dot8" for="i8"></label>
+                        <label class="dots" id="dot9" for="i9"></label>
+                    </div>
+                  </div>
+            </div>
+      </div>
+      <div id = "rightBlock"></div>
+      <footer>
+        <div class="follow">
+            <ol>
+                <li><a href="https://www.facebook.com/ChaseAtlantic/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://x.com/chaseatlantic?s=21&t=uykJ_cTPaJ545pzMCRzH1A"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/chaseatlantic?igsh=YTNhbDN4bmVvbHBh"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/@chaseatlantic"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://youtube.com/@chaseatlantic?si=13DZY2XG6q-lnjlk"><i class="fab fa-youtube"></i></a></li>
+             </ol>
+         </div>
    </body>
 </html>

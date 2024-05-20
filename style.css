@@ -1,6 +1,466 @@
-.pos {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Макет */
+/*.body{
+    background-color: silver;
+}
+
+header, footer, menyBlock {
+    border: 2px solid rgb(0, 0, 0);
+    width: 90%;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+#leftBlock, #infoBlock, #rightBlock{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    float: left;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 196px;
+}
+
+#leftBlock {
+    margin-left: 5%;
+    width: 20%;
+    height: 200px;
+}
+
+#infoBlock {
+    width: 46.5%;
+    height: 200px;
+}
+
+#rightBlock {
+    margin-right: 4%;
+    width: 20%;
+    height: 200px;
+}
+
+/* Банер фотографії ////////////////////////////////////////////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.banner{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 80vh;
+margin-top: -30px;
+transition: none;
+background-image: url(ChaseAtlantic/CHASE_ATLANTIC-2.jpg);
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-position: center;
+margin-bottom: 40px; 
+}
+
+/* Меню //////////////////////////////////////////////////////////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+.logo, .textbox{
+    margin-right: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.textbox li{
+    margin-right: 35px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.textbox a{
+    vertical-align: middle;
+    font-family: 'Anton', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 19px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.textbox a:hover{
+    color:#74c6f5fd;
+}
+
+.logo h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 25.5px;
+    vertical-align: middle;
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* Стилі тексту //////////////////////////////////////////////////////////////*/
+p{
+  font-size: 25px;
+  font-family: 'Times New Roman', serif;
+  color: #000000;
+}
+
+b{
+  color: #032538fd;
+}
+
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.text-justify{
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.firstBlock_main{
+display: flex;
+margin-bottom: 20px;
+}
+
+/* Блоки */
+#leftBlock, #rightBlock {
+  height: 60px;
+  padding: 0px;
+  margin: 5px;
+  float: left;
+  left: 50%;
+}
+
+#infoBlock {
+  width: 63%; /* Змінив ширину, щоб вона була рівною в гугл версії */
+  padding: 80px;
+  margin: 0 auto; /* Центруємо блок горизонтально */
+  margin-top: -55px;
+}
+
+#leftBlock{
+  width: 2%;
+}
+
+#rightBlock {
+  width: 2%;
+}
+
+/*Для головної сторінки /////////////////////////////////////////////////////////*/
+
+video{
+  width: 90%; 
+}
+
+.secondBlock_main{
+  margin-top: 40px; /* Налаштуйте значення відступу */
+  justify-content: center;
+  display: flex;
+
+}
+
+/* соц.мережі //////////////////////////////////////////////////////////////*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+footer {
+  text-align: center;
+  background: #226f9bfd;
+  width: 100%; /* Змінено ширину */
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0; 
+  transition: 0.2s; 
+}
+
+.follow {
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.follow a {
+  width: 65px;
+  height: 65px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  border: 1.5px solid #fff4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Змінено на центрування по центру */
+  border-radius: 50%;
+  margin-right: 35px;
+}
+
+ol{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+.follow ol li:nth-child(1) a:hover{
+  color: #fffffffd;
+  background:  #293eb9fd;
+}
+
+.follow ol li:nth-child(2) a:hover{
+  color: #fffffffd;
+  background:  #6abff0fd;
+}
+
+.follow ol li:nth-child(3) a:hover{
+  color: #fffffffd;
+  background:  #e94e70fd;
+}
+
+.follow ol li:nth-child(4) a:hover{
+  color: #fffffffd;
+  background:  #000000;
+}
+
+.follow ol li:nth-child(5) a:hover{
+  color: #fffffffd;
+  background:  #eb2a2afd;
+}
+
+.follow ol li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+}
+
+/* Мерч ////////////////////////////////////////////////////////////////////////////////////////*/
+.Block_merch{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 2px;
+}
+.merch--title{
+  display: inline-block;
+  text-align: center;
+  align-items: center; 
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: -12px;
+}
+.merch-container1, .merch-container2, .merch-container3, .merch-container4, .merch-container5, .merch-container6{
+  overflow: hidden; 
+  width: 400px;
+  height: 380px;
+}
+
+.merch_picture1, .merch_picture2, .merch_picture3, .merch_picture4, .merch_picture5, .merch_picture6{
+  width: 90%;
+  height: 100%;
+  transition: transform 0.2 ease;
+}
+
+.merch--title:hover .merch_picture1{
+  transform: scale(1.05);
+}
+.merch--title:hover .merch_picture2{
+  transform: scale(1.05);
+}
+.merch--title:hover .merch_picture3{
+  transform: scale(1.05);
+}
+.merch--title:hover .merch_picture4{
+  transform: scale(1.05);
+}
+.merch--title:hover .merch_picture5{
+  transform: scale(1.05);
+}
+.merch--title:hover .merch_picture6{
+  transform: scale(1.05);
+}
+
+.merch--title a{
+  text-decoration: none;
+}
+.merch--title a:hover{
+  color: #000000fd;
+  text-decoration: underline;
+}
+
+ /* Альбоми //////////////////////////////////////////////////////////////////////////////////////*/
+ .firstBloc_albums, .secondBlock_albums, .thirdBlock_albums{
+  display: inline-block;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 2px;
+}
+
+.music_title{
+  margin: 30px 0;
+  text-align: center;
+}
+
+.albums--title{
+  display: inline-block;
+  text-align: center;
+  align-items: center; 
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: -12px;
+}
+
+.albums-container{
+  overflow: hidden; 
+  width: 330px;
+  height: 300px;
+}
+
+.albums_picture{
+  width: 90%;
+  height: 100%;
+  transition: transform 0.2 ease;
+}
+
+.albums--title:hover .albums_picture{
+  transform: scale(1.05);
+}
+
+.albums--title a{
+  text-decoration: none;
+}
+
+.albums--title a:hover{
+  color: #000000fd;
+  text-decoration: underline;
+}
+
+/* Фотоальбом //////////////////////////////////////////////////////////////////////////////*/
+.block_gallery{
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container{
+  position: relative;
+  width: 50%;
+  padding-bottom: 51%;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  width: 50;
+  height: 0;
+  padding-bottom: 50%;
+  background: #81cbf7;
+  border: solid 9px #b3e3ffbe;
+}
+
+.slide_img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide_img img{
+  width: 87%;
+  height: 100%;
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9{
+  display: none;
+}
+
+.pre, .nxt{
+  width: 9%;
+  height: 0%;
+  position:absolute;
+  top: 100%;
+  background: #74c6f5e3;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.pre{
+  left: 0;
+}
+
+.nxt{
+  right: 0;
+}
+
+.nav{
+  width: 100%;
+  height: 11px;
+  bottom: 7%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+
+.dots{
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: #0b3c588c;
+}
+
+.slide_img{
+  z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five,
+#i6:checked ~ #six,
+#i7:checked ~ #seven,
+#i8:checked ~ #eight,
+#i9:checked ~ #nine {
+    z-index: 20;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4,
+#i5:checked ~ .nav #dot5,
+#i6:checked ~ .nav #dot6,
+#i7:checked ~ .nav #dot7,
+#i8:checked ~ .nav #dot8,
+#i9:checked ~ .nav #dot9{
+    background: #2495ffcc;
 }
