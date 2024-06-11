@@ -67,7 +67,7 @@ justify-content: center;
 min-height: 80vh;
 margin-top: -30px;
 transition: none;
-background-image: url(ChaseAtlantic/CHASE_ATLANTIC-2.jpg);
+background-image: url(ChaseAtlantic/CHASE_ATLANTIC.jpg);
 background-repeat: no-repeat;
 background-size: 100% auto;
 background-position: center;
@@ -75,51 +75,110 @@ margin-bottom: 40px;
 }
 
 /* Меню //////////////////////////////////////////////////////////////////////*/
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-}
-.logo, .textbox{
-    margin-right: 100px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.textbox li{
-    margin-right: 35px;
-    display: inline-block;
-    vertical-align: middle;
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 95%;
+  top: 0; right: 0;
+  z-index: 1000;
+  align-items: center;
+  background: #226f9bfd;
+  padding: 17px 3%;
+  box-shadow: 5px 5px 5px #195274fd; 
+  transition: 0.2s;
 }
 
-.textbox a{
-    vertical-align: middle;
-    font-family: 'Anton', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 19px;
-    color: #ffffff;
-    text-decoration: none;
+.logo {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.textbox a:hover{
-    color:#74c6f5fd;
+.textbox {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1150px;
 }
 
-.logo h1{
-    font-family: 'Anton', sans-serif;
-    font-size: 25.5px;
-    vertical-align: middle;
-    color: #ffffff;
-    font-style: italic;
+.textbox li {
+  margin-right: 50px;
+  display: inline-block;
+  vertical-align: middle;
 }
+
+.textbox a {
+  vertical-align: middle;
+  font-family: 'Anton', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 23px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.textbox a:hover {
+  color: #74c6f5fd;
+}
+
+.logo h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 25.5px;
+  vertical-align: middle;
+  color: #ffffff;
+  font-style: italic;
+}
+
 
 /* Стилі тексту //////////////////////////////////////////////////////////////*/
+
+form {
+  width: 60%;
+  margin: 0 auto; /* Вирівнювання форми по центру сторінки */
+}
+
+form ol {
+  padding-left: 20px;
+  text-align: left; /* Вирівнювання списку по лівій стороні */
+}
+
+form li {
+  margin-bottom: 15px;
+}
+
+form b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="radio"] {
+  margin-right: 10px;
+}
+
+form input[type="text"] {
+  margin-right: 10px;
+}
+
+form .center {
+  text-align: center; /* Центрування елементів всередині блоку */
+}
+
+textarea[name="s1"] {
+  width: 100%;
+  box-sizing: border-box; /* Вирівнювання textarea */
+}
+
+p {
+  text-align: center; /* Центрування абзаців */
+}
+
+
+/*////////////////////////////////////////////*/
 p{
   font-size: 25px;
   font-family: 'Times New Roman', serif;
@@ -135,9 +194,10 @@ h2{
   font-size: 30px;
 }
 
+
 .text-justify{
   text-align: justify;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .firstBlock_main{
@@ -152,6 +212,15 @@ margin-bottom: 20px;
   margin: 5px;
   float: left;
   left: 50%;
+}
+
+/* блок для головної сторінки, а точніше для тексту*/
+#infoBlock1{
+  width: 51%; /* Змінив ширину, щоб вона була рівною в гугл версії */
+  padding: 80px;
+  margin: 0 auto; /* Центруємо блок горизонтально */
+  margin-top: -55px;
+
 }
 
 #infoBlock {
@@ -172,15 +241,15 @@ margin-bottom: 20px;
 /*Для головної сторінки /////////////////////////////////////////////////////////*/
 
 video{
-  width: 90%; 
+  width: 100%; 
 }
 
 .secondBlock_main{
   margin-top: 40px; /* Налаштуйте значення відступу */
   justify-content: center;
   display: flex;
-
 }
+
 
 /* соц.мережі //////////////////////////////////////////////////////////////*/
 * {
@@ -190,73 +259,44 @@ video{
   list-style: none;
 }
 
-footer {
+footer{
   text-align: center;
   background: #226f9bfd;
-  width: 100%; /* Змінено ширину */
-  top: 0;
+  width: 94%;
+  top: 0; right: 0;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 0; 
-  transition: 0.2s; 
+  padding:20px 3%;
+  transition: 0,2s;
 }
-
-.follow {
-  padding: 5px 0;
+.share{
+  padding: 15px 0;
   display: flex;
   justify-content: center;
+  margin-right: 8px;
 }
-
-.follow a {
-  width: 65px;
-  height: 65px;
+.share a{
+  width: 65px; /* ширина квадрату*/
+  height: 65px; /* висота квадрату */
+  margin-left: 20px;
   text-decoration: none;
-  color: #ffffff;
-  font-size: 30px;
+  color: #fff4f4;
+  font-size: 30px; /* розмір іконки */
   border: 1.5px solid #fff4f4;
   display: flex;
-  align-items: center;
-  justify-content: center; /* Змінено на центрування по центру */
-  border-radius: 50%;
-  margin-right: 35px;
-}
-
-ol{
-  display: flex;
+  align-items: center; 
   justify-content: center;
-  margin-bottom: 20px;
-
+  border-radius: 50%;
 }
-
-.follow ol li:nth-child(1) a:hover{
-  color: #fffffffd;
-  background:  #293eb9fd;
+.share a:hover{
+  color: #071d29fd;
+  background:  #fff4f4;
 }
-
-.follow ol li:nth-child(2) a:hover{
-  color: #fffffffd;
-  background:  #6abff0fd;
-}
-
-.follow ol li:nth-child(3) a:hover{
-  color: #fffffffd;
-  background:  #e94e70fd;
-}
-
-.follow ol li:nth-child(4) a:hover{
-  color: #fffffffd;
-  background:  #000000;
-}
-
-.follow ol li:nth-child(5) a:hover{
-  color: #fffffffd;
-  background:  #eb2a2afd;
-}
-
-.follow ol li:hover:before{
-  filter: blur(3px);
-  transform: scale(1.2);
+.whitep{
+  margin-top: 10px;
+  color: #fff4f4;
 }
 
 /* Мерч ////////////////////////////////////////////////////////////////////////////////////////*/
@@ -363,7 +403,7 @@ ol{
 }
 
 /* Фотоальбом //////////////////////////////////////////////////////////////////////////////*/
-.block_gallery{
+.Block_gallery{
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
@@ -373,26 +413,20 @@ ol{
 
 .container{
   position: relative;
-  width: 50%;
-  padding-bottom: 51%;
-  margin: 0 auto;
-  margin-top: 20px;
-  position: relative;
-  width: 50;
-  height: 0;
-  padding-bottom: 50%;
-  background: #81cbf7;
-  border: solid 9px #b3e3ffbe;
+  width: 85%;
+  padding-bottom: 80%;
 }
 
 .slide_img{
   position: absolute;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center; 
 }
 
 .slide_img img{
-  width: 87%;
+  width: 80%;
   height: 100%;
 }
 
@@ -401,13 +435,36 @@ ol{
 }
 
 .pre, .nxt{
-  width: 9%;
-  height: 0%;
+  width: 9.5%;
+  height: 10%;
   position:absolute;
-  top: 100%;
-  background: #74c6f5e3;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff00;
   z-index: 99;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 50%;
+  border: solid 0.5px #000000fd;
+  margin: -5px;
+  overflow: hidden; 
+}
+
+.pre img, .nxt img{
+  width: 50%;
+  height: auto;
+  transition: transform 0.2s ease; 
+}
+
+.pre:hover img, .nxt:hover img{
+  transform: scale(1.1);
+}
+
+.pre:hover, .nxt:hover{
+  background: #ffffffc4;
+  border: solid 0.5px #fffffffd
 }
 
 .pre{
@@ -431,17 +488,18 @@ ol{
   top: -5px;
   width: 20px;
   height: 20px;
-  margin: 0 7px;
+  margin: 0 4px;
   position: relative;
   border-radius: 50%;
   display: inline-block;
-  background: #0b3c588c;
+  background: rgba(179, 179, 179, 0.445);
 }
 
 .slide_img{
   z-index: -1;
 }
 
+/* Встановлення z-index для поточного слайда і відповідної точки навігації */
 #i1:checked ~ #one,
 #i2:checked ~ #two,
 #i3:checked ~ #three,
@@ -453,6 +511,7 @@ ol{
 #i9:checked ~ #nine {
     z-index: 20;
 }
+/* Підсвічування відповідної точки навігації під час вибору зображення */
 #i1:checked ~ .nav #dot1,
 #i2:checked ~ .nav #dot2,
 #i3:checked ~ .nav #dot3,
@@ -462,5 +521,5 @@ ol{
 #i7:checked ~ .nav #dot7,
 #i8:checked ~ .nav #dot8,
 #i9:checked ~ .nav #dot9{
-    background: #2495ffcc;
+    background: #ffffffa8;
 }
